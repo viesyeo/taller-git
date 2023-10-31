@@ -1,4 +1,4 @@
-from operations import add
+from operaciones import add
 def game():
     score = 0
     while True:
