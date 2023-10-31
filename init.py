@@ -1,9 +1,9 @@
-from operaciones import resta
+from operaciones import multi
 def game():
     score = 0
     while True:
         print('========Menu========'
-              '\n1.resta'
+              '\n1.multiplicación'
               '\n0.Exit')
         option = int(input('\nChoice an option:')) 
         if option == 0:
@@ -13,9 +13,9 @@ def game():
         answer=int(input('Enteryouanswer:'))
 
         if option==1: 
-            result = num_1 - num_2
+            result = num_1 * num_2
             if result == answer:
-                score+=1
+                score+=2
                 print('Correct!!')
             else:
                 print('Incorrect')
