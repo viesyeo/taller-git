@@ -1,9 +1,9 @@
-from operaciones import multi
+from operaciones import divi
 def game():
     score = 0
     while True:
         print('========Menu========'
-              '\n1.multiplicación'
+              '\n1.división'
               '\n0.Exit')
         option = int(input('\nChoice an option:')) 
         if option == 0:
@@ -13,7 +13,7 @@ def game():
         answer=int(input('Enteryouanswer:'))
 
         if option==1: 
-            result = num_1 * num_2
+            result = num_1 / num_2
             if result == answer:
                 score+=2
                 print('Correct!!')
